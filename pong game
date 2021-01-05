@@ -1,0 +1,85 @@
+var r2=580
+var r1=300
+var x1=30;
+var y1=0  
+var D = 40
+var speed =5
+var DirectionX=1
+var DirectionY=1
+
+function setup() {
+
+  createCanvas(400, 600);
+  rectMode(CENTER)
+}
+function draw() {
+  background(220);
+  x1=x1+speed*DirectionX //
+  y1=y1+speed*DirectionY
+  
+  print(x1)
+  
+  circle(x1,y1,D)
+  //.  x1. y1. w. h. (input values to a function)
+
+  if(x1>400,0){
+    DirectionX=-1
+  }
+  if(x1<0,0){
+    DirectionX=1
+  }
+  
+  if(y1>400,600){
+    DirectionY=-1
+  }
+  
+  if(y1<0,400){
+    DirectionY=1
+  }
+  
+  
+  
+}
+
+var x1=30;
+var y1=0  
+var D = 40
+var speed =5
+var DirectionX=1
+var DirectionY=1
+
+function setup() {
+
+  createCanvas(400, 600);
+ // rectMode(CENTER)
+}
+function draw() {
+  background(220);
+ 
+  x1=x1+speed*DirectionX //
+  y1=y1+speed*DirectionY
+  
+  print(x1)
+  
+  circle(x1,y1,D)
+  //.  x1. y1. w. h. (input values to a function)
+
+  if(x1>400){
+    DirectionX=-1
+  }
+  if(x1<0){
+    DirectionX=1
+  }
+  
+  if(y1>600){
+    DirectionY=-1
+ }
+  
+  if(y1<0){
+    DirectionY=1
+  }
+//rect(mouseX,r2,100,20)
+//if(rect>D){
+//DirectionY = -1
+
+}
